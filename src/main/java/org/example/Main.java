@@ -10,15 +10,15 @@ class Main {
   System.out.println("Enter number of gallons: ");
   int gall = gallons.nextInt();
   NumberFormat num = NumberFormat.getNumberInstance();
-  System.out.println("In " + num.format(gall) + "gallons there are:");
+  System.out.println("In " + num.format(gall) + " gallons there are:");
   int quart = gall*4;
-  System.out.println("Number of hours: " + num.format(quart));
+  System.out.println(num.format(quart) + " quarts");
   int pint = quart*2;
-  System.out.println("Number of minutes: " + num.format(pint));
+  System.out.println(num.format(pint) + " pints");
   int cup = pint*2;
-  System.out.println("Number of Seconds: " + num.format(cup));
+  System.out.println(num.format(cup) + " cups");
   int tbsp = cup*16;
-  System.out.println("Number of Seconds: " + num.format(tbsp));
+  System.out.println(num.format(tbsp) + " tablespoons");
   }
 }
   
