@@ -8,16 +8,16 @@ class Main {
 
 	Scanner gallons = new Scanner(System.in);
   System.out.println("Enter number of gallons: ");
-  int gall = gallons.nextInt();
+  double gall = gallons.nextDouble();
   NumberFormat num = NumberFormat.getNumberInstance();
   System.out.println("In " + num.format(gall) + " gallons there are:");
-  int quart = gall*4;
+  double quart = gall*4;
   System.out.println(num.format(quart) + " quarts");
-  int pint = quart*2;
+  double pint = quart*2;
   System.out.println(num.format(pint) + " pints");
-  int cup = pint*2;
+  double cup = pint*2;
   System.out.println(num.format(cup) + " cups");
-  int tbsp = cup*16;
+  double tbsp = cup*16;
   System.out.println(num.format(tbsp) + " tablespoons");
   }
 }
